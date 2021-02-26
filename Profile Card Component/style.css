@@ -1,0 +1,141 @@
+html {
+        box-sizing: border-box;
+        font-size: 100%;
+        background-color: var(--Drkcyan);
+    }
+
+    *, *::before, *::after {
+        font-family: 'Kumbh Sans', sans-serif;
+        box-sizing:inherit;
+    }
+
+    :root {
+        --Drkcyan: hsl(185, 75%, 39%);
+        --Vdkblue: hsl(229, 23%, 23%);
+        --Drkgrayblue: hsl(227, 10%, 46%);
+        --Drkgray: hsl(0, 0%, 59%);
+        --Statname: 18px;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container {
+        background-color: white;
+        border-radius: 1rem;
+        width: 350px;
+        margin-bottom: 1rem;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0,0.15);
+    }
+
+    
+    .banner svg {
+        border-radius: 1rem 1rem 0 0;
+    }
+  
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 35%;
+    border-radius: 50%;
+    margin-top: -10%;
+    border: 4px solid white;
+}
+  }
+  
+  .bio h3, .stats h3 {
+    color: var(--Drkblue);
+    font-size: var(--Statname);
+    font-weight: bolder;
+  }
+  
+  .bio p, .stats p {
+    color: var(--Drkgrayblue);
+  }
+  
+  .bio p {
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .bio span {
+    font-weight: normal;
+    color: var(--Drkgrayblue);
+    padding-left: 0.5rem;
+  }
+  
+  .stats {
+    border-top: 1px solid rgb(226, 226, 226);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.8rem 0;
+  }
+  
+  .stats h3 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .stats p {
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 0.1rem;
+  }
+  
+  .followers, .likes, .photos {
+    text-align: center;
+  }
+  
+  .bg-pattern-top {
+    position: absolute;
+    width: 70%;
+    right: 50%;
+    bottom: 38%;
+    z-index: -1;
+    border: none;
+  }
+  
+  .bg-pattern-bottom {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: -1;
+    width: 70%;
+    border: none;
+  }
+  
+  @media (max-width: 375px) {
+    .bg-pattern-top {
+      width: 150%;
+      bottom: 70%;
+      right: 40%;
+    }
+  
+    .bg-pattern-bottom {
+      width: 150%;
+      top: 60%;
+      left: 50%;
+    }
+  }
